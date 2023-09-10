@@ -8,7 +8,6 @@ locals {
   suffix = format("%s-%s", "tf", random_string.launch_id.result)
 }
 
-
 module "bings_bun" {
   source           = "../modules/gce"
   suffix           = local.suffix
