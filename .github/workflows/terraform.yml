@@ -27,7 +27,7 @@ jobs:
       - name: Setup GCP Service Account
         uses: google-github-actions/auth@v0
         with:
-          credentials_json: '${{ secrets.TF_API_TOKEN }}'
+          credentials_json: ${{ secrets.TF_API_TOKEN }}
           # workload_identity_provider : 
           
 
